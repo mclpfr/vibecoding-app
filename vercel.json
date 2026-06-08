@@ -1,0 +1,4 @@
+{
+  "rewrites": [ { "source": "/(.*)", "destination": "/api/proxy" } ],
+  "headers": [ { "source": "/(.*)", "headers": [{ "key": "X-Powered-By", "value": "PixelNotes" }] } ]
+}

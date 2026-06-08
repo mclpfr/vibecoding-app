@@ -1,0 +1,14 @@
+services:
+  app:
+    image: pixelnotes:latest
+    ports:
+      - "0.0.0.0:3000:3000"
+    environment:
+      - NODE_ENV=production
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: superSecret123
+      POSTGRES_DB: pixelnotes
+    ports:
+      - "0.0.0.0:5432:5432"
